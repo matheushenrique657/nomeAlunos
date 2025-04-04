@@ -16,9 +16,10 @@ public class nomeAlunos {
         while (alunos.size() <= quantidade) {
             alunos.add(sc.nextLine());
         }
-        alunos.remove(0);
-        System.out.println("removendo " + alunos.remove(2) + " (Terceiro(a) aluno(a))");
-
+        System.out.println("Qual aluno deseja remover da lista?");
+        String remover = sc.nextLine();
+        alunos.remove(remover);
+        alunos.removeFirst();
         System.out.println("agora a lista tem " + alunos.size() + " alunos");
         System.out.println("Lista de alunos: " + alunos);
     }
